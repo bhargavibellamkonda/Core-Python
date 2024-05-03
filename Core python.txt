@@ -1,0 +1,3756 @@
+                                                                               CORE PYTHON
+===================================================================================================================================================================================================
+
+
+
+# program to print a statement
+print("welcome to python")
+
+#program to print multiple statement
+print("nipuna technologies")
+print("vijayawada")
+print("guntur")
+
+#program to print a statements with different punctuations
+print("varshi")
+print('varshi')
+print("""varshi""")
+print("'varshi'")
+print(""'varshi'"")
+
+#program to splif a statement to different line
+print("happy \
+new \
+year \
+2023")
+
+#program to initialize value in a variable and print it
+age=45
+print("value in variable age =",age)
+
+#program to initlallze value in a variable and print if ,type,size and address
+import sys
+age=45
+print("age=",age)
+print("data type=",type(age))
+print("size=",sys.getsizeof(age))
+print("address=",hex(id(age)))
+
+x=65
+print("x=",x)
+print("binary=",bin(x))
+print("hex=",hex(x))
+print("octal=",oct(x))
+
+ch='a'
+print("ch=",ch)
+print("asci=",ord(ch))
+print("binary=",bin(ord(ch)))
+print("hex=",hex(ord(ch)))
+print("octal=",oct(ord(ch)))
+
+#convert ascii to character
+x=65
+print("character=",chr(x))
+
+#swapping
+a,b=5,3
+print("values before swap""a=",a,"\t","b=",b)
+a,b=b,a
+print("value after swap""a=",a,"\t","b=",b)
+
+
+#program to store value in variable and print and print it
+bcode="b101"
+bno=101
+bname="unix"
+bprice=456.75
+bpcode="u"
+bav=True
+print("............")
+print("\\book details")
+print("code=",bcode)
+print("name=",bname)
+print("price=",bprice)
+print("printcode=",bpcode)
+print("availability=",bav)
+print("...............")
+
+#arithimetical operators
+a,b=5,3
+print("addition=",(a+b))
+print("substration=",(a-b))
+print("multipication=",(a*b))
+print("division=",(a/b))
+print("floordivision=",(a//b))
+print("modulus=",(a%b))
+print("exponentiation=",(a**b))
+
+#program to input a value from the keybord slove it in a variable and print if
+name=input("enter your name..:")
+print("your name=",name)
+print("datatype=",type(name))
+
+#program to input a value from the keyboard convert it store it in a variable and print it
+age=input("enter your age in numbers..:")
+print("your name=",age)
+print("data type=",type(age))
+
+#arithmatical opratons
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=a+b
+print("addition=",c)
+c=a-b
+print("substration=",c)
+c=a*b
+print("multipication=",c)
+c=a/b
+print("floor division=",c)
+c=a%b
+print("modules=",c)
+c=a**b
+print("exponentation=",c)
+
+#program to calculate area of ractangle
+l=int(input("enter length..:"))
+b=int(input("enter length..:"))
+a=l+b
+print("area of reclangle",a)
+
+#program to calculate circum ference and area of circle
+import math
+r=int(input("enter radius..:"))
+c=2*math.pi*r
+print("circum ference of circle=",c)
+a=math.pi*r*r
+print("area of circle=",a)
+
+#program to calculate simple and compound interest
+p=float(input("enter radius..:"))
+t=float(input("enter time..:"))
+r=float(input("enter rate of interst..:"))
+si=p*t*r/100
+print("simple interest=",si)
+ci=p*pow(1+5/100,t)
+print("compound interst=",ci)
+f=int(input("enter temperature in fanrenheit..:"))
+c=f-32*5/9
+print("celsivs=",ci)
+ci=int(input("enter temperature in c exsivs..:"))
+f=(ci*9/5)+32
+print("fahrenheat=",f)
+
+sno=input("enter student number..:")
+sname=input("enter student name..:")
+sclass=input("enter student class..:")
+ssec=input("enter student section..:")
+m1=int(input("enter m1..:"))
+m2=int(input("enter m2..:"))
+m3=int(input("enter m3..:"))
+m4=int(input("enter m4..:"))
+m5=int(input("enter m5..:"))
+m6=int(input("enter m6..:"))
+tot=m1+m2+m3+m4+m5+m6
+avg=tot/6
+print(".................")
+print("\t marks report")
+print(".....................")
+print("sno=",sno,"\t","sname=",sname)
+print("sclass=",sclass,"\t","ssec=",ssec)
+print(".................")
+print("........................")
+print("\n m1=",m1,"\t","m2=",m2)
+print("\n m3=",m3,"\t","m4=",m4)
+print("\n m5=",m5,"\t","m6=",m6)
+print(".............")
+print("total marks=",tot)
+print("percentage=",avg)
+print("............")
+
+#if
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+if(a>b):
+  print("a is big")
+
+#if else
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+if(a>b):
+  print("a is big")
+else:
+  print("b is big")
+
+#elif
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+if(a>b):
+  print("a is big")
+elif(a<b):
+  print("b is big")
+
+#elif ladder
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+if(a>b):
+  print("a is big")
+elif(a<b):
+  print("b is big")
+elif(a==b):
+  print("both are equal")
+else:
+  print("both are equal")
+
+#nested if
+x=int(input("enter a number..:"))
+if("x,s=0"):
+  if("x==0"):
+    print("zero")
+else:
+  print("positive")
+print("negitive")
+
+#conditional opertor or terinar operator
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+t=a if a>b else b
+print(t,"is big")
+
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=int(input("enter c..:"))
+d=int(input("enter d..:"))
+e=int(input("enter e..:"))
+x=a
+if(b>x):x=b
+if(c>x):x=c
+if(d>x):x=d
+if(e>x):x=e
+print("X is big")
+
+#largest of 3 numbers
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=int(input("enter c..:"))
+if(a>b and a>c):
+  print("a is big")
+elif(b>a and b>c):
+  print("b is big")
+else:
+  print("c is big")
+
+x=int(input("enter a number"))
+if(x%2==0):
+  print("even number")
+else:
+  print("odd number")
+
+age=int(input("enter your age..:"))
+if(age>=65):
+  print("senior citzen")
+  print("elizible tovote")
+elif(age<65 and age>=18):
+  print("major citizen")
+  print("elizible to vote")
+elif(age<18):
+  print("minor citizen")
+  print("not elizible to vote")
+
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=int(input("enter c..:"))
+if(a>=b and a>=c):
+ if(b>=c):
+  print("second largest number=b")
+ else:
+  print("second largest number=c")
+elif b>=a and b>=a:
+ if a>=c:
+  print("second largest number=a")
+ else:
+  print("second largest number=c")
+else:
+ if a>=b:
+   print("second largest number=a")
+ else:
+   print("second largest number=b")
+
+y=int(input("enter a year..:"))
+if(y%400==0 and y%100!=0):
+  print("leap year")
+else:
+  print("not")
+
+y=int(input("enter a year..:"))
+if(y%400==0):
+  print("leap year")
+elif(y%100==0):
+  print("not a leap year")
+elif(y%4==0):
+  print("leap year")
+else:
+  print("not a leap year")
+
+ch=input("press any key..:")
+if (ord (ch)>=65 and ord (ch)<=90):
+  print("upper case")
+elif(ord(ch)>=97 and ord(ch)<=122):
+  print("lower case")
+elif(ord(ch)>=48 and ord(ch)<=57):
+  print("digit")
+else:
+  print("others")
+
+ch=input("press any key on keyword..:")
+if (ch>="A"and ch<="Z"):
+  print("upper case")
+elif(ch>="a"and ch<="z"):
+  print("lower case")
+elif(ch>="0" and ch<="9"):
+  print("digit")
+else:
+  print("other")
+
+sno=input("enter sno..:")
+sname=input("enter sname..:")
+sclass=input("enter sclass..:")
+ssec=input("enter ssec..:")
+m1=int(input("enter m1..:"))
+m2=int(input("enter m2..:"))
+m3=int(input("enter m3..:"))
+m4=int(input("enter m4..:"))
+m5=int(input("enter m5..:"))
+m6=int(input("enter m6..:"))
+tot=m1+m2+m3+m4+m5+m6
+avg=tot/6
+print(".............")
+print("\t marks report")
+print("sno=",sno,"\t","sname=",sname)
+print("sclass=",sclass,"\t","ssec=",ssec)
+print("......................")
+print("m1=",m1,"\t","m2=",m2)
+print("m3=",m3,"\t","m4=",m4)
+print("m5=",m5,"\t","m6=",m6)
+print("................")
+if(m1<35 or m2<35 or m3<35 or m4<35 or m5<35 or m6<35 ):
+  print("result=fail")
+  print("grade=no grade")
+elif("arg>=65"):
+  print("result=pass")
+  print("grade=a")
+elif("avg<65 and avg>=45"):
+  print("result=pass")
+  print("rade=b")
+elif(avg<45):
+  print("result=pass")
+  print("grade=c")
+  print("..............")
+
+#print statement 5times with loop
+print("move forward")
+print("move forward")
+print("move forward")
+print("move forward")
+print("move forward")
+
+#print statement 5times exit while loop
+i=1
+while(i<=5):
+  print("nipuna technologes")
+  i=i+1
+
+#program to print 1to 5 numbers
+i=1
+while(i<=5):
+  print(i)
+  i=i+1
+
+#program to print 1to 5 numbers
+i=1
+while(i<=5):
+  print(i,end="")
+  i=i+1
+
+#program to print 5 to 1 numbers
+i=5
+while(i>=1):
+  print(i,end="")
+  i=i-1
+
+i=1;c=0
+while(i<=5):
+  print(i,end="")
+  c=c+1
+  i=i+1
+  print()
+  print("count=",c)
+
+#program to mint 1to 5 numbers,count,sum and average
+i=1;c=0;s=0
+while(i<=5):
+ print(i,end="")
+ c=c+1
+ s=s+i
+ i=i+1
+ print()
+ print("cot=",c)
+ print("sum=",s)
+ avg=s/5
+ print("average=",avg)
+
+#even numbers between 1 to 10
+i=1
+while(i<=10):
+  if(i%2==0):
+     print(i,end="")
+  i=i+1
+
+#odd numbers between 1 to 10
+i=1
+while(i<=10):
+   if(i%2!=0):
+     print(i,end="")
+   i=i+1
+
+i=1
+while(i <= 10):
+    print(i)
+    if (i%2!=0):
+        print("nipuna technologies")
+    else:
+        print("vijayawada")
+    i=i+1
+
+#fizzbuzz logic
+i=1
+while(i<=16):
+    if(i%15==0):
+      print("fizzbuzz")
+    elif(i%3==0):
+      print("fizz")
+    elif(i%5==0):
+      print("buzz")
+    i=i+1
+
+#program to print numer square cube
+i=1
+print("number \t squre t cube")
+print(".................")
+while(i<=10):
+  print(i,"\t",i*i,"\t",i*i*i)
+  i=i+1
+
+#program to print 1to n numbers
+n=int(input("enter a number..:"))
+i=1
+while (i<=n):
+   print(i)
+   i=i+1
+
+#count to number of digids in a given number
+i=1;c=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  n=n//10
+  c=c+1
+print("count=",c)
+
+#sum of digits
+i=1
+s=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  r=n%10
+  s=s+r
+  n=n//10
+print("sum of digits=",s)
+
+#program to print fibonaci series upto n numbers
+i=0;a=0;b=1
+n=int(input("enter a number..:"))
+while(i<=n):
+   print(a,end="")
+   c=a+b
+   a=b
+   b=c
+   i=i+1
+
+#program to print factorial of a given number
+i=1;f=1
+n=int(input("enter a number..:"))
+while(i<=n):
+  f=f*i
+  i=i+1
+  print("factorial=",f)
+
+#program to print factorials upto a given number
+i=1;f=1
+n=int(input("enter a number..:"))
+print("number \t factorial")
+print(".............")
+while(i<=n):
+  f=f*i
+  print(i,"\t",f)
+  i=i+1
+
+#count number of digits in a given number
+i=1;c=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  n=n/10
+  c=c+1
+print("count of digits=",c)
+
+#number is armstrong or not
+i=1;s=0
+n=int(input("enter a number..:"))
+t=n
+while(i<=n):
+  r=n%10
+  s=s+r*r*r
+  n=n//10
+  if(t==s):
+    print("armstrong")
+  else:
+    print("not")
+
+i=1;s=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  r=n%10
+  s=s*10+r
+  n=n//10
+print("reverse=",s)
+
+i=1;s=0
+n=int(input("enter a number..:"))
+t=n
+while(i<=n):
+  r=n%10
+  s=s*10+r
+  n=n//10
+if(t==s):
+  print("palindrome")
+else:
+  print("not")
+
+#program to print 1 to 10 numbers using for loop
+for i in range(1,11):
+  print(i)
+
+#program to print 1 to 10 number using for loop
+for i in range(1,11):
+  print(i,end="")
+
+#program to print 1 to 10 numbers with step 1 using for loop
+for i in range(1,11,2):
+  print(i,end="")
+
+#program to print 10 to 1 number using for loop
+for i in range(10,0,-1):
+  print(i,end="")
+
+#program to print 10 to 1 numbers,their count,sum and average using for loop
+c=0;s=0
+for i in range(1,11):
+  c=c+1
+  s=s+i
+  print(i,end="")
+print()
+print("count=",c)
+print("sum=",s)
+av=s/10
+print("average=",av)
+
+#program to print even number from 1to 10
+for i in range(1,11):
+  if(i%2==0):
+    print(i,end="")
+
+#program to print odd number from 1 to 10
+for i in range(1,11):
+  if(i%2!=0):
+    print(i,end="")
+
+for i in range(1,6):
+  print(i)
+if(i%2!=0):
+    print("nipuna")
+else:
+  print("vijayawada")
+
+#fizzbuzz logic
+for i in range(1,17):
+  if(i%15==0):
+    print("fizzbuzz")
+  elif(i%3==0):
+    print("fizzbuzz")
+  elif(i%5==0):
+    print("buzz")
+  else:
+    print(i)
+
+#program to print number ,squar and cube between 1 to  10
+print("\n number \t squre \t cube")
+print("............")
+for i in range (1,11):
+  print(i,"\t",i*i,"\t",i*i*i)
+
+#program to print fibonacci from series from 1 to 10
+a=0;b=1
+for i in range(1,11):
+   print(a,end="")
+   c=a+b
+   a=b
+   b=c
+
+#program to print fibonaci series from 1 to n
+n=int(input("enter a number..:"))
+for i in range(1,n+1):
+  print(i)
+
+#nested while loop
+i=1
+while(i<=5):
+  j=1
+  while(j<=5):
+    print("*",end="")
+    j=j+1
+  print()
+  i=i+1
+
+#nested for loop
+for i in range(5):
+  for j in range(5):
+    print("*",end="")
+  print()
+
+#break statement
+for i in range(1,11):
+  if(i>5):
+    break
+  print(i)
+
+#continue statement
+for i in range(1,11):
+  if(i%2==0):
+    continue
+  print(i)
+
+#pass statement
+def greet():
+  pass
+
+#complex data type
+x=10+5j
+print(x)
+print(type(x))
+print(x.real)
+print(x.imag)
+
+#random
+import random
+print(random.randint(1,10))
+
+#random
+x=round(5645657567.234345,2)
+print(x)
+
+x=(-545)
+print(abs(x))
+
+#math module
+import math
+dir(math)
+
+#getting help for the function
+import math
+help(math.log1p)
+
+#math functions
+import math
+print(math.tan(40))
+print(math.sin(60))
+print(math.cos(40))
+print(math.floor(2343.4554))
+print(math.ceil(2343.4554))
+print(math.log(1))
+print(math.log10(1))
+print(math.log1p(1))
+print(math.log2(1))
+print(math.factorial(5))
+print(math.sqrt(4))
+print(math.exp(2))
+print(math.radians(30))
+print(math.degrees(30))
+print(math.remainder(2,4))
+print(math.pow(2,4))
+print(math.pi)
+print(math.e)
+print(math.pow(2,4))
+print(math.modf(10.5))
+print(math.lcm(1,2,3,4,5))
+print(math.gcd(1,2,3,4,5))
+print(math.fabs(-100.4))
+
+
+import math
+x=int(input("enter a number..:"))
+print("factorial=",math.factorial(x))
+
+#strings
+x="state bank of india"
+print(x)
+print(type(x))
+
+#program to fetch alphabet from a specified index
+x="state bank of india"
+print(x)
+print(x[6])
+
+x="a"
+print(x)
+print(type(x))
+
+#string concatination
+x="state bank of india"
+y="ongole"
+print("string1=",x)
+print("string2=",y)
+print("concatination=",x+y)
+
+#string replcation
+x="state bank of india"
+print("replication=",x*3)
+print("replication=",3*x)
+
+#negative index
+x="state bank of india"
+print("value of x=",x)
+print(x[-2])
+
+#stringslicing
+x="state bank of india"
+print(x)
+print("value of x=",x[:])
+print(x[:3])
+print("value of x=",x[0:6])
+print("value of x=",x[0:11])
+print("value of x=",x[0:11:2])
+print("value of x=",x[0:-1])
+print("value of x=",x[0:-2])
+
+x="state bank of india"
+result =x[-5:]
+print(result)
+
+#reverse a string
+x="amma"
+print(x[::-1])
+
+#string palindrome
+x="amma"
+if(x==x[::-1]):
+  print("palindrome")
+else:
+  print("not")
+
+#string anagram
+x="scilent"
+y="liscent"
+if(sorted(x)==sorted(y)):
+  print("anagram")
+else:
+  print("not")
+
+#password generator
+import random
+a="abcdefghijklmnopqrstuvwxyz"
+b="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+C="1234567890"
+d="!@#$%^&*(){}>~-_+=:;'<>,/?"
+e="a+b+c+d"
+l=int(input("enter length of password..:"))
+f=random. sample(e,1)
+print(f)
+g="".join(f)
+print(g)
+
+#string methods
+a="brilliant computer education"
+b="ongole"
+c="state bank of india"
+d="          indiatimes"
+print(len(a))
+print(a.count('i'))
+print(a.index('n'))
+print(a.upper())
+print(a.lower())
+print(a.title())
+print(a.swapcase())
+print(a.casefold())
+print(a.replace('o','x'))
+print(a.strip())
+print(a.lstrip())
+print(a.rstrip())
+print(a.zfill(30))
+print(a.startswith("bri"))
+print(a.endswith("nd"))
+
+
+#maketrans,trancate
+txt="abc  def  pqr  def  asdf"
+mytable=txt.maketrans("def","1*2")
+print(txt.translate(mytable))
+
+#printing a string using for loop
+x="state  bank  of  india"
+for i in x:
+  print(i,end="")
+
+#finding number of charaters in astring
+c=0
+x="state bank of india"
+for i in x:
+  print(i,end="")
+if(i==""):
+  nsp=nsp+1
+  "continue";
+print()
+print("number of spaces", 'nsp')
+
+#finding number of spacess,in a string
+nsp=0
+x="state bank of india"
+for i in x:
+   print(i, end="")
+if(i==""):
+  nsp=nsp+1
+  "continue";
+print()
+print("number of spaces",nsp)
+
+#calling a function
+def frlist():
+  print("pen")
+  print("pencil")
+  print("book")
+frlist()
+frlist()
+
+#proram without a function
+print("pen")
+print("pencil")
+print("book")
+print("pen")
+print("pencil")
+print("book")
+
+#calling a function
+def frlist():
+  print("pen")
+  print("pencle")
+  print("book")
+frlist()
+print("...................")
+frlist()
+
+#calling a function
+def starline():
+  for i in range(11):
+    print("*",end="")
+starline()
+
+#calling a function
+starline()
+print("\n nipuna technologies")
+starline
+
+#function without arguments without return type
+def mysum():
+  a=5
+  b=3
+  c=a+b
+  print("sum=",c)
+mysum()
+
+#function with arguemnts without return type
+def mysum(x,y):
+  a=x
+  b=y
+  c=a+b
+  print("sum=",c)
+mysum(20,10)
+
+#funtion without arguments with return type
+def mysum():
+  a=5
+  b=3
+  c=a+b
+  return c
+print("sum=",mysum())
+
+#funtion with arguments with return type
+def mysum(x,y):
+  a=x
+  b=y
+  c=x+y
+  return c
+t=mysum(20,19)
+print("sum=",t)
+
+#sibenar ke using recursion
+def fib(n):
+  if n<=1:
+    return n
+  else:
+    return("fib(n-1)+fib(n-2)")
+  x=int(input("enter x"))
+  for i in range(x):
+    print(fib(i))
+fib(100)
+
+
+#*args
+def adder(*args):
+  sum=0
+  for n in args:
+    sum=sum+n
+  print("sum:",sum)
+adder(3,5)
+adder(1,2,3,4)
+adder(2,12,19,45,32)
+
+#**kwargs
+def intro(**data):
+  print("\n data type of argument:",type(data))
+  for key ,value in data .items():
+    print("{} is {}".format(key, value))
+intro(firstname="sita",lastname="sharma",age=22,phone=1234567890)
+intro(firstname="john",lastname="wood",email="johnwood@nomail.com",country="wakanda",age=35,phone=9876543210)
+
+#partial function without comments
+from functools import partial
+def f(a,b,c,x):
+  return 1000*a+100*b+10*c+x
+g=partial(f,3,1,4)
+print(g(5))
+
+#creating empty list
+x=[]
+print(x)
+print(type(x))
+
+#creating a list with list items & print
+x=[19,20,67,87,9,43]
+print(x)
+print(type(x))
+
+#creating a list with different data types
+x=[1,2,3,4,5,6]
+print(x)
+x=[11.5,9.6,34.65,44.63,44.6]
+print(x)
+x=[11j,5j,7j,33j,90j,34j]
+print(x)
+x=["pen","pencil","book","eraser","scale"]
+print(x)
+
+#creatine alist with different data types
+emp_det=[101,"anil",45655.74,"b"]
+print(emp_det)
+
+#adding elements
+x=[1,234,45,56,889,44,56,78,89]
+print(x)
+x.append(100)
+print(x)
+x.extend([34,56,65,78,89])
+print(x)
+x.insert(5,11)
+print(x)
+
+#removing elements from the list
+x=["pen","pencil","book","eraser","scale","apple","mango","grapes","orange"]
+print(x)
+x.pop()
+print(x)
+x.pop(3)
+print(x)
+del x[3]
+print(x)
+x.remove("mango")
+print(x)
+x.clear()
+print(x)
+del x
+
+
+x=[1,234,45,56,7,889,44,56]
+print(x)
+print(x[2])
+
+#accessing list elements(slicing)
+x=[1,234,45,56,7,889,44,56,78,89,45,67,89,90,5,567,789,90]
+print(x[:])
+print(x[0:5])
+print(x[0:11:2])
+print(x[7:11])
+print(x[0:-1])
+print(x[7:-2:2])
+print(x[-5:])
+
+#reverse a list
+x=[1,234,45,56,7,889,44,56,78,89,45,67,89,90,5,567,789,90]
+print(x)
+print(x[::-1])
+
+#sorting
+x=[1,2,3,4,5,6,7,9,8]
+print(x)
+print(sorted(x))
+print(sorted(x,reverse= True))
+
+#sorting
+x=[1,2,3,4,5,6,7,9,8]
+print(x)
+x.sort()
+print(x)
+x.sort(reverse=True)
+
+#list methods
+x=[15,24,34,44,54,64,74,44,74,8]
+print("sum=",sum(x))
+print("max=",max(x))
+print("min=",min(x))
+print("length=",len(x))
+print("count=",x.count(44))
+print("index=",x.index(74))
+
+#average
+x=[15,24,34,44,54,64,74,44,9,8]
+print("average=",sum(x)/len(x))
+
+#membership operators
+x=[56,67,89,90,65,78,89,54]
+print("in=",100 in x)
+print("not in=",98 not in x)
+
+#all
+x=[1,2,3,4,5,6,7,8,9]
+y=[]
+print("all=",all(x))
+print("all=",all(y))
+
+#any
+x=[1,2,3,4,5,6,7,8,9]
+y=[]
+print("any=",any(x))
+print("any=",any(y))
+
+#enumeration
+x=["pen","pencil","book","eraser","scale"]
+print(x)
+print(type(x))
+y=enumerate(x)
+print(list(y))
+print(type(y))
+
+x=["pen","pencil","book","eraser","scale"]
+print(x)
+print(type(x))
+y=enumerate(x,start=100)
+print(list(y))
+print(type(y))
+
+#updating a value
+x=[1,2,3,4,5]
+print(x)
+print(x[2])
+x[2]=11
+print(x)
+print(x[2])
+
+#list concatination
+a=[1,2,3,4,5]
+b=[6,7,8,9,10]
+print(a)
+print(b)
+print(a+b)
+
+#replication
+a=[1,2,3,4,5]
+print(a*3)
+print(3*a)
+
+#copy
+x=[1,2,3,4,5]
+y=x.copy
+print(x)
+print(y)
+
+#map
+def msqrt(x):
+  return x*x
+y=[1,2,3,4,5]
+z=map(msqrt,y)
+print(y,list(z))
+
+#zip
+name=["sravani","sridhar","eeshwar","maadhav"]
+roll_no=[4,1,3,2]
+x=zip(name,roll_no)
+print(list(x))
+
+#filter
+scores=[70,80,90,50]
+x=filter(lambda s:s>70,scores)
+print(list(x))
+
+#accessing elements using for loop
+x=[40,10,7,6,3,2,9]
+for i in x:
+  print(i,end="")
+
+#sum and average of elements of list
+x=[13,12,13,1,35]
+s=0
+for i in x:
+  print(i,end="")
+  s=s+i
+print()
+print("sum=",s/5)
+
+#print even numbers from a list
+x=[1,2,3,4,5]
+for i in x:
+  if(i%2==0):
+    print(i,end="")
+
+#arthmentical operation lists
+a=[1,2,3,4,5]
+b=[1,2,3,4,5]
+c=[]
+for i in range(5):
+  c.append(a[i]+b[1])
+print(c)
+
+#accept elements from key bord and print them
+a=[]
+n=int(input("enter size..:"))
+for i in range(0,n):
+  x=int(input())
+  a.append(x)
+print(a)
+
+#program without list comprehension
+x=[]
+for y in range (1,11):
+  x.append(y)
+print(x)
+
+#program with list comprehesion
+x=[y for y in range(1,11)]
+print(x)
+
+#program without list compreshenision
+even_nums=[]
+for x in range(21):
+    if x%2==0:
+      even_nums.append(x)
+    print(even_nums)
+
+#program with list comprehenision even numbers between 1 to 10
+even_nums=[x for x in range (1,11) if x%2==0]
+print(even_nums)
+
+#tuple
+x=(1,2,3,4,5)
+print(x)
+print(type(x))
+
+#deleting a tuple
+x=(1,2,3,4,5)
+del x
+
+#set
+x={1,3,115,3,7,99,2}
+print(type(x))
+print(x)
+
+class bird:      #class
+  def fly(self):  #function
+    print("they fly to fultill natural activities")
+varshi=bird()     #object parrot instantiated from the class brid
+varshi.fly()
+
+class icecrem:      #class
+  def melt(self):    #function
+    print("it melts at room temperature")
+vanilla=icecrem()    #object vanilla
+vanilla.melt()
+
+class bird:          #class
+  def fly(self):      #function
+    print("they fly to fultill natural activitiees")
+parrot=bird()         #object parrot instantiated from the  class brid
+parrot.fly()
+print("........")
+pigeon=bird()         #object pigeon instantiaed from the class bird
+pigeon.fly()
+
+class bird:      #class
+  def fly(self):  #function
+    print("they fly to fultill natural actities")
+  def buildnest(self):#function
+    print("they buid nest to live")
+parrot=bird()    #object parrot instantiated from the class bird
+parrot.fly()
+parrot.buildnest()
+[2:21 am, 3/5/2024] Varshitha Coaching Frnd: Open In Colab
+
+from google.colab import drive
+drive.mount('/content/gdrive/')
+     
+Mounted at /content/gdrive/
+
+from PIL import Image
+x=Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/04.jpg')
+x
+     
+
+
+#resizing image and save it in the drive
+from PIL import Image
+image= Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/03.jpg')
+y=image.resize((200,200))
+y.save('/content/gdrive/My Drive/Colab Notebooks/jpg/image_400.jpg')
+y
+     
+
+
+#thumbnail
+from PIL import Image
+image=Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/04.jpg')
+image.thumbnail((40,40))
+image.save('/content/gdrive/My Drive/Colab Notebooks/jpg/image_thumnail.jpg')
+image
+     
+
+
+#cropping image
+from PIL import Image
+image=Image.open('/content/gdrive/My Drive/Colab Noteb…
+[2:22 am, 3/5/2024] Varshitha Coaching Frnd: Open In Colab
+
+#program to print a statement
+print("welcome to python")
+     
+welcome to python
+
+#program to print multiple statement
+print("nipuna technologies")
+print("vijayawada")
+print("guntur")
+     
+nipuna technologies
+vijayawada
+guntur
+
+#program to print a statements with different punctuations
+print("varshi")
+print('varshi')
+print("""varshi""")
+print("'varshi'")
+print(""'varshi'"")
+     
+varshi
+varshi
+varshi
+'varshi'
+varshi
+
+#program to print a statements with different punctuations
+print("varshi")
+print('varshi')
+print("""varshi""")
+print("'varshi'")
+print(""'varshi'"")
+     
+varshi
+varshi
+varshi
+'varshi'
+varshi
+
+#program to splif a statement to different line
+print("happy\
+new\
+year\
+2023")
+     
+happynewyear2023
+
+#program to initialize value in a variable and print it
+age=45
+print("value in variable age =",age)
+     
+value in variable age = 45
+
+#program to initlallze value in a variable and print if ,type,size and address
+import sys
+age=45
+print("age=",age)
+print("data type=",type(age))
+print("size=",sys.getsizeof(age))
+print("address=",hex(id(age)))
+     
+age= 45
+data type= <class 'int'>
+size= 28
+address= 0x7944430d8670
+
+x=65
+print("x=",x)
+print("binary=",bin(x))
+print("hex=",hex(x))
+print("octal=",oct(x))
+     
+x= 65
+binary= 0b1000001
+hex= 0x41
+octal= 0o101
+
+ch='a'
+print("ch=",ch)
+print("asci=",ord(ch))
+print("binary=",bin(ord(ch)))
+print("hex=",hex(ord(ch)))
+print("octal=",oct(ord(ch)))
+     
+ch= a
+asci= 97
+binary= 0b1100001
+hex= 0x61
+octal= 0o141
+
+#convert ascii to character
+x=65
+print("character=",chr(x))
+     
+character= A
+
+#swapping
+a,b=5,3
+print("values before swap""a=",a,"\t","b=",b)
+a,b=b,a
+print("value after swap""a=",a,"\t","b=",b)
+
+     
+values before swapa= 5 	 b= 3
+value after swapa= 3 	 b= 5
+
+#program to store value in variable and print and print it
+bcode="b101"
+bno=101
+bname="unix"
+bprice=456.75
+bpcode="u"
+bav=True
+print("............")
+print("\book details")
+print("code=",bcode)
+print("name=",bname)
+print("price=",bprice)
+print("printcode=",bpcode)
+print("availability=",bav)
+print("...............")
+     
+............
+\book details
+code= b101
+name= unix
+price= 456.75
+printcode= u
+availability= True
+...............
+
+#arithimetical operators
+a,b=5,3
+print("addition=",(a+b))
+print("substration=",(a-b))
+print("multipication=",(a*b))
+print("division=",(a/b))
+print("floordivision=",(a//b))
+print("modulus=",(a%b))
+print("exponentiation=",(a**b))
+     
+addition= 8
+substration= 2
+multipication= 15
+division= 1.6666666666666667
+floordivision= 1
+modulus= 2
+exponentiation= 125
+
+#program to input a value from the keybord slove it in a variable and print if
+name=input("enter your name..:")
+print("your name=",name)
+print("datatype=",type(name))
+     
+enter your name..:varshi
+your name= varshi
+datatype= <class 'str'>
+
+#program to input a value from the keyboard convert it store it in a variable and print it
+age=input("enter your age in numbers..:")
+print("your name=",age)
+print("data type=",type(age))
+     
+enter your age in numbers..:45
+your name= 45
+data type= <class 'str'>
+
+#arithmatical opratons
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=a+b
+print("addition=",c)
+c=a-b
+print("substration=",c)
+c=a*b
+print("multipication=",c)
+c=a/b
+print("floor division=",c)
+c=a%b
+print("modules=",c)
+c=a**b
+print("exponentation=",c)
+     
+enter a..:10
+enter b..:5
+addition= 15
+substration= 5
+multipication= 50
+floor division= 2.0
+modules= 0
+exponentation= 100000
+
+#program to calculate area of ractangle
+l=int(input("enter length..:"))
+b=int(input("enter length..:"))
+a=l+b
+print("area of reclangle",a)
+     
+enter length..:5
+enter length..:7
+area of reclangle 12
+
+#program to calculate circum ference and area of circle
+import math
+r=int(input("enter radius..:"))
+c=2*math.pi*r
+print("circum ference of circle=",c)
+a=math.pi*r*r
+print("area of circle=",a)
+     
+enter radius..:20
+circum ference of circle= 125.66370614359172
+area of circle= 1256.6370614359173
+
+#program to calculate simple and compound interest
+p=float(input("enter radius..:"))
+t=float(input("enter time..:"))
+r=float(input("enter rate of interst..:"))
+si=p*t*r/100
+print("simple interest=",si)
+ci=p*pow(1+5/100,t)
+print("compound interst=",ci)
+f=int(input("enter temperature in fanrenheit..:"))
+c=f-32*5/9
+print("celsivs=",ci)
+ci=int(input("enter temperature in c exsivs..:"))
+f=(ci*9/5)+32
+print("fahrenheat=",f)
+     
+enter radius..:25
+enter time..:15
+enter rate of interst..:10
+simple interest= 37.5
+compound interst= 51.97320448528422
+enter temperature in fanrenheit..:5
+celsivs= 51.97320448528422
+enter temperature in c exsivs..:9
+fahrenheat= 48.2
+
+sno=input("enter student number..:")
+sname=input("enter student name..:")
+sclass=input("enter student class..:")
+ssec=input("enter student section..:")
+m1=int(input("enter m1..:"))
+m2=int(input("enter m2..:"))
+m3=int(input("enter m3..:"))
+m4=int(input("enter m4..:"))
+m5=int(input("enter m5..:"))
+m6=int(input("enter m6..:"))
+tot=m1+m2+m3+m4+m5+m6
+avg=tot/6
+print(".................")
+print("\t marks report")
+print(".....................")
+print("sno=",sno,"\t","sname=",sname)
+print("sclass=",sclass,"\t","ssec=",ssec)
+print(".................")
+print("........................")
+print("\n m1=",m1,"\t","m2=",m2)
+print("\n m3=",m3,"\t","m4=",m4)
+print("\n m5=",m5,"\t","m6=",m6)
+print(".............")
+print("total marks=",tot)
+print("percentage=",avg)
+print("............")
+     
+enter student number..:37
+enter student name..:varsi
+enter student class..:10
+enter student section..:a
+enter m1..:25
+enter m2..:24
+enter m3..:23
+enter m4..:25
+enter m5..:24
+enter m6..:23
+.................
+	 marks report
+.....................
+sno= 37 	 sname= varsi
+sclass= 10 	 ssec= a
+.................
+........................
+
+ m1= 25 	 m2= 24
+
+ m3= 23 	 m4= 25
+
+ m5= 24 	 m6= 23
+.............
+total marks= 144
+percentage= 24.0
+............
+
+#if
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+if(a>b):
+  print("a is big")
+     
+enter a..:20
+enter b..:15
+a is big
+
+#if else
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+if(a>b):
+  print("a is big")
+else:
+  print("b is big")
+     
+enter a..:20
+enter b..:25
+b is big
+enter a..:10
+enter b..:15
+b is big
+enter a..:15
+enter b..:15
+both are equal
+
+#nested if
+x=int(input("enter a number..:"))
+if("x,s=0"):
+  if("x==0"):
+    print("zero")
+else:
+  print("positive")
+print("negitive")
+     
+enter a number..:25
+zero
+negitive
+
+#conditional opertor or terinar operator
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+t=a if a>b else b
+print(t,"is big")
+     
+enter a..:25
+enter b..:20
+25 is big
+
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=int(input("enter c..:"))
+d=int(input("enter d..:"))
+e=int(input("enter e..:"))
+x=a
+if(b>x):x=b
+if(c>x):x=c
+if(d>x):x=d
+if(e>x):x=e
+print("X is big")
+     
+enter a..:24
+enter b..:23
+enter c..:35
+enter d..:15
+enter e..:27
+X is big
+
+#largest of 3 numbers
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=int(input("enter c..:"))
+if(a>b and a>c):
+  print("a is big")
+elif(b>a and b>c):
+  print("b is big")
+else:
+  print("c is big")
+     
+enter a..:20
+enter b..:15
+enter c..:25
+c is big
+
+x=int(input("enter a number"))
+if(x%2==0):
+  print("even number")
+else:
+  print("odd number")
+     
+enter a number25
+odd number
+
+age=int(input("enter your age..:"))
+if(age>=65):
+  print("senior citzen")
+  print("elizible tovote")
+elif(age<65 and age>=18):
+  print("major citizen")
+  print("elizible to vote")
+elif(age<18):
+  print("minor citizen")
+  print("not elizible to vote")
+     
+enter your age..:20
+major citizen
+elizible to vote
+
+a=int(input("enter a..:"))
+b=int(input("enter b..:"))
+c=int(input("enter c..:"))
+if(a>=b and a>=c):
+ if(b>=c):
+  print("second largest number=b")
+ else:
+  print("second largest number=c")
+elif b>=a and b>=a:
+ if a>=c:
+  print("second largest number=a")
+ else:
+  print("second largest number=c")
+else:
+ if a>=b:
+   print("second largest number=a")
+ else:
+   print("second largest number=b")
+     
+enter a..:24
+enter b..:15
+enter c..:25
+second largest number=a
+
+y=int(input("enter a year..:"))
+if(y%400==0 and y%100!=0):
+  print("leap year")
+else:
+  print("not")
+     
+enter a year..:1999
+not
+
+y=int(input("enter a year..:"))
+if(y%400==0):
+  print("leap year")
+elif(y%100==0):
+  print("not a leap year")
+elif(y%4==0):
+  print("leap year")
+else:
+  print("not a leap year")
+     
+enter a year..:2021
+not a leap year
+
+ch=input("press any key..:")
+if (ord (ch)>=65 and ord (ch)<=90):
+  print("upper case")
+elif(ord(ch)>=97 and ord(ch)<=122):
+  print("lower case")
+elif(ord(ch)>=48 and ord(ch)<=57):
+  print("digit")
+else:
+  print("others")
+     
+press any key..:v
+lower case
+
+ch=input("press any key on keyword..:")
+if (ch>="A"and ch<="Z"):
+  print("upper case")
+elif(ch>="a"and ch<="z"):
+  print("lower case")
+elif(ch>="0" and ch<="9"):
+  print("digit")
+else:
+  print("other")
+     
+press any key on keyword..:A
+upper case
+
+sno=input("enter sno..:")
+sname=input("enter sname..:")
+sclass=input("enter sclass..:")
+ssec=input("enter ssec..:")
+m1=int(input("enter m1..:"))
+m2=int(input("enter m2..:"))
+m3=int(input("enter m3..:"))
+m4=int(input("enter m4..:"))
+m5=int(input("enter m5..:"))
+m6=int(input("enter m6..:"))
+tot=m1+m2+m3+m4+m5+m6
+avg=tot/6
+print(".............")
+print("\t marks report")
+print("sno=",sno,"\t","sname=",sname)
+print("sclass=",sclass,"\t","ssec=",ssec)
+print("......................")
+print("m1=",m1,"\t","m2=",m2)
+print("m3=",m3,"\t","m4=",m4)
+print("m5=",m5,"\t","m6=",m6)
+print("................")
+if(m1<35 or m2<35 or m3<35 or m4<35 or m5<35 or m6<35 ):
+  print("result=fail")
+  print("grade=no grade")
+elif("arg>=65"):
+  print("result=pass")
+  print("grade=a")
+elif("avg<65 and avg>=45"):
+  print("result=pass")
+  print("rade=b")
+elif(avg<45):
+  print("result=pass")
+  print("grade=c")
+  print("..............")
+     
+enter sno..:1
+enter sname..:varshi
+enter sclass..:10
+enter ssec..:a
+enter m1..:99
+enter m2..:98
+enter m3..:89
+enter m4..:99
+enter m5..:97
+enter m6..:99
+.............
+	 marks report
+sno= 1 	 sname= varshi
+sclass= 10 	 ssec= a
+......................
+m1= 99 	 m2= 98
+m3= 89 	 m4= 99
+m5= 97 	 m6= 99
+................
+result=pass
+grade=a
+
+#print statement 5times with loop
+print("move forward")
+print("move forward")
+print("move forward")
+print("move forward")
+print("move forward")
+     
+move forward
+move forward
+move forward
+move forward
+move forward
+
+#print statement 5times exit while loop
+i=1
+while(i<=5):
+  print("nipuna technologes")
+  i=i+1
+     
+nipuna technologes
+nipuna technologes
+nipuna technologes
+nipuna technologes
+nipuna technologes
+
+#program to print 1to 5 numbers
+i=1
+while(i<=5):
+  print(i)
+  i=i+1
+     
+1
+2
+3
+4
+5
+
+#program to print 1to 5 numbers
+i=1
+while(i<=5):
+  print(i,end="")
+  i=i+1
+     
+12345
+
+#program to print 5 to 1 numbers
+i=5
+while(i>=1):
+  print(i,end="")
+  i=i-1
+     
+54321
+
+i=1;c=0
+while(i<=5):
+  print(i,end="")
+  c=c+1
+  i=i+1
+  print()
+  print("count=",c)
+     
+1
+count= 1
+2
+count= 2
+3
+count= 3
+4
+count= 4
+5
+count= 5
+
+#program to mint 1to 5 numbers,count,sum and average
+i=1;c=0;s=0
+while(i<=5):
+ print(i,end="")
+ c=c+1
+ s=s+i
+ i=i+1
+ print()
+ print("cot=",c)
+ print("sum=",s)
+ avg=s/5
+ print("average=",avg)
+     
+1
+cot= 1
+sum= 1
+average= 0.2
+2
+cot= 2
+sum= 3
+average= 0.6
+3
+cot= 3
+sum= 6
+average= 1.2
+4
+cot= 4
+sum= 10
+average= 2.0
+5
+cot= 5
+sum= 15
+average= 3.0
+
+#even numbers between 1 to 10
+i=1
+while(i<=10):
+  if(i%2==0):
+     print(i,end="")
+  i=i+1
+     
+246810
+
+#odd numbers between 1 to 10
+i=1
+while(i<=10):
+   if(i%2!=0):
+     print(i,end="")
+   i=i+1
+     
+13579
+
+i=1
+while(i <= 10):
+    print(i)
+    if (i%2!=0):
+        print("nipuna technologies")
+    else:
+        print("vijayawada")
+    i=i+1
+     
+1
+nipuna technologies
+2
+vijayawada
+3
+nipuna technologies
+4
+vijayawada
+5
+nipuna technologies
+6
+vijayawada
+7
+nipuna technologies
+8
+vijayawada
+9
+nipuna technologies
+10
+vijayawada
+
+#fizzbuzz logic
+i=1
+while(i<=16):
+    if(i%15==0):
+      print("fizzbuzz")
+    elif(i%3==0):
+      print("fizz")
+    elif(i%5==0):
+      print("buzz")
+    i=i+1
+     
+fizz
+buzz
+fizz
+fizz
+buzz
+fizz
+fizzbuzz
+
+#program to print numer square cube
+i=1
+print("number \t squre t cube")
+print(".................")
+while(i<=10):
+  print(i,"\t",i*i,"\t",i*i*i)
+  i=i+1
+     
+number 	 squre t cube
+.................
+1 	 1 	 1
+2 	 4 	 8
+3 	 9 	 27
+4 	 16 	 64
+5 	 25 	 125
+6 	 36 	 216
+7 	 49 	 343
+8 	 64 	 512
+9 	 81 	 729
+10 	 100 	 1000
+
+#program to print 1to n numbers
+n=int(input("enter a number..:"))
+i=1
+while (i<=n):
+   print(i)
+   i=i+1
+     
+enter a number..:5
+1
+2
+3
+4
+5
+
+#count to number of digids in a given number
+i=1;c=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  n=n//10
+  c=c+1
+print("count=",c)
+     
+enter a number..:100
+count= 3
+
+#sum of digits
+i=1
+s=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  r=n%10
+  s=s+r
+  n=n//10
+print("sum of digits=",s)
+     
+enter a number..:876
+sum of digits= 21
+
+#program to print fibonaci series upto n numbers
+i=0;a=0;b=1
+n=int(input("enter a number..:"))
+while(i<=n):
+   print(a,end="")
+   c=a+b
+   a=b
+   b=c
+   i=i+1
+     
+enter a number..:8
+01123581321
+
+#program to print factorial of a given number
+i=1;f=1
+n=int(input("enter a number..:"))
+while(i<=n):
+  f=f*i
+  i=i+1
+  print("factorial=",f)
+     
+enter a number..:15
+factorial= 1
+factorial= 2
+factorial= 6
+factorial= 24
+factorial= 120
+factorial= 720
+factorial= 5040
+factorial= 40320
+factorial= 362880
+factorial= 3628800
+factorial= 39916800
+factorial= 479001600
+factorial= 6227020800
+factorial= 87178291200
+factorial= 1307674368000
+
+#program to print factorials upto a given number
+i=1;f=1
+n=int(input("enter a number..:"))
+print("number \t factorial")
+print(".............")
+while(i<=n):
+  f=f*i
+  print(i,"\t",f)
+  i=i+1
+     
+enter a number..:10
+number 	 factorial
+.............
+1 	 1
+2 	 2
+3 	 6
+4 	 24
+5 	 120
+6 	 720
+7 	 5040
+8 	 40320
+9 	 362880
+10 	 3628800
+
+#count number of digits in a given number
+i=1;c=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  n=n/10
+  c=c+1
+print("count of digits=",c)
+     
+enter a number..:15
+count of digits= 2
+
+#number is armstrong or not
+i=1;s=0
+n=int(input("enter a number..:"))
+t=n
+while(i<=n):
+  r=n%10
+  s=s+r*r*r
+  n=n//10
+  if(t==s):
+    print("armstrong")
+  else:
+    print("not")
+     
+enter a number..:15
+not
+not
+
+i=1;s=0
+n=int(input("enter a number..:"))
+while(i<=n):
+  r=n%10
+  s=s*10+r
+  n=n//10
+print("reverse=",s)
+     
+enter a number..:156
+reverse= 651
+
+i=1;s=0
+n=int(input("enter a number..:"))
+t=n
+while(i<=n):
+  r=n%10
+  s=s*10+r
+  n=n//10
+if(t==s):
+  print("palindrome")
+else:
+  print("not")
+     
+enter a number..:5
+palindrome
+
+#program to print 1 to 10 numbers using for loop
+for i in range(1,11):
+  print(i)
+     
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+#program to print 1 to 10 number using for loop
+for i in range(1,11):
+  print(i,end="")
+     
+12345678910
+
+#program to print 1 to 10 numbers with step 1 using for loop
+for i in range(1,11,2):
+  print(i,end="")
+     
+13579
+
+#program to print 10 to 1 number using for loop
+for i in range(10,0,-1):
+  print(i,end="")
+     
+10987654321
+
+#program to print 10 to 1 numbers,their count,sum and average using for loop
+c=0;s=0
+for i in range(1,11):
+  c=c+1
+  s=s+i
+  print(i,end="")
+print()
+print("count=",c)
+print("sum=",s)
+av=s/10
+print("average=",av)
+     
+12345678910
+count= 10
+sum= 55
+average= 5.5
+
+#program to print even number from 1to 10
+for i in range(1,11):
+  if(i%2==0):
+    print(i,end="")
+     
+246810
+
+#program to print odd number from 1 to 10
+for i in range(1,11):
+  if(i%2!=0):
+    print(i,end="")
+     
+13579
+
+for i in range(1,6):
+  print(i)
+if(i%2!=0):
+    print("nipuna")
+else:
+  print("vijayawada")
+     
+1
+2
+3
+4
+5
+nipuna
+
+#fizzbuzz logic
+for i in range(1,17):
+  if(i%15==0):
+    print("fizzbuzz")
+  elif(i%3==0):
+    print("fizzbuzz")
+  elif(i%5==0):
+    print("buzz")
+  else:
+    print(i)
+     
+1
+2
+fizzbuzz
+4
+buzz
+fizzbuzz
+7
+8
+fizzbuzz
+buzz
+11
+fizzbuzz
+13
+14
+fizzbuzz
+16
+
+#program to print number ,squar and cube between 1 to  10
+print("\n number \t squre \t cube")
+print("............")
+for i in range (1,11):
+  print(i,"\t",i*i,"\t",i*i*i)
+     
+ number 	 squre 	 cube
+............
+1 	 1 	 1
+2 	 4 	 8
+3 	 9 	 27
+4 	 16 	 64
+5 	 25 	 125
+6 	 36 	 216
+7 	 49 	 343
+8 	 64 	 512
+9 	 81 	 729
+10 	 100 	 1000
+
+#program to print fibonacci from series from 1 to 10
+a=0;b=1
+for i in range(1,11):
+   print(a,end="")
+   c=a+b
+   a=b
+   b=c
+     
+0112358132134
+
+#program to print fibonaci series from 1 to n
+n=int(input("enter a number..:"))
+for i in range(1,n+1):
+  print(i)
+     
+enter a number..:10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+#nested while loop
+i=1
+while(i<=5):
+  j=1
+  while(j<=5):
+    print("*",end="")
+    j=j+1
+  print()
+  i=i+1
+     
+***
+***
+***
+***
+***
+
+#nested for loop
+for i in range(5):
+  for j in range(5):
+    print("*",end="")
+  print()
+     
+***
+***
+***
+***
+***
+
+#break statement
+for i in range(1,11):
+  if(i>5):
+    break
+  print(i)
+     
+1
+2
+3
+4
+5
+
+#continue statement
+for i in range(1,11):
+  if(i%2==0):
+    continue
+  print(i)
+     
+1
+3
+5
+7
+9
+
+#pass statement
+def greet():
+  pass
+     
+
+#complex data type
+x=10+5j
+print(x)
+print(type(x))
+print(x.real)
+print(x.imag)
+     
+(10+5j)
+<class 'complex'>
+10.0
+5.0
+
+#random
+import random
+print(random.randint(1,10))
+     
+4
+
+#random
+x=round(5645657567.234345,2)
+print(x)
+     
+5645657567.23
+
+x=(-545)
+print(abs(x))
+     
+545
+
+#math module
+import math
+dir(math)
+     
+['_doc_',
+ '_loader_',
+ '_name_',
+ '_package_',
+ '_spec_',
+ 'acos',
+ 'acosh',
+ 'asin',
+ 'asinh',
+ 'atan',
+ 'atan2',
+ 'atanh',
+ 'ceil',
+ 'comb',
+ 'copysign',
+ 'cos',
+ 'cosh',
+ 'degrees',
+ 'dist',
+ 'e',
+ 'erf',
+ 'erfc',
+ 'exp',
+ 'expm1',
+ 'fabs',
+ 'factorial',
+ 'floor',
+ 'fmod',
+ 'frexp',
+ 'fsum',
+ 'gamma',
+ 'gcd',
+ 'hypot',
+ 'inf',
+ 'isclose',
+ 'isfinite',
+ 'isinf',
+ 'isnan',
+ 'isqrt',
+ 'lcm',
+ 'ldexp',
+ 'lgamma',
+ 'log',
+ 'log10',
+ 'log1p',
+ 'log2',
+ 'modf',
+ 'nan',
+ 'nextafter',
+ 'perm',
+ 'pi',
+ 'pow',
+ 'prod',
+ 'radians',
+ 'remainder',
+ 'sin',
+ 'sinh',
+ 'sqrt',
+ 'tan',
+ 'tanh',
+ 'tau',
+ 'trunc',
+ 'ulp']
+
+#getting help for the function
+import math
+help(math.log1p)
+     
+Help on built-in function log1p in module math:
+
+log1p(x, /)
+    Return the natural logarithm of 1+x (base e).
+    
+    The result is computed in a way which is accurate for x near zero.
+
+
+#math functions
+import math
+print(math.tan(40))
+print(math.sin(60))
+print(math.cos(40))
+print(math.floor(2343.4554))
+print(math.ceil(2343.4554))
+print(math.log(1))
+print(math.log10(1))
+print(math.log1p(1))
+print(math.log2(1))
+print(math.factorial(5))
+print(math.sqrt(4))
+print(math.exp(2))
+print(math.radians(30))
+print(math.degrees(30))
+print(math.remainder(2,4))
+print(math.pow(2,4))
+print(math.pi)
+print(math.e)
+print(math.pow(2,4))
+print(math.modf(10.5))
+print(math.lcm(1,2,3,4,5))
+print(math.gcd(1,2,3,4,5))
+print(math.fabs(-100.4))
+
+     
+-1.117214930923896
+-0.3048106211022167
+-0.6669380616522619
+2343
+2344
+0.0
+0.0
+0.6931471805599453
+0.0
+120
+2.0
+7.38905609893065
+0.5235987755982988
+1718.8733853924696
+2.0
+16.0
+3.141592653589793
+2.718281828459045
+16.0
+(0.5, 10.0)
+60
+1
+100.4
+
+import math
+x=int(input("enter a number..:"))
+print("factorial=",math.factorial(x))
+     
+enter a number..:5
+factorial= 120
+
+#strings
+x="state bank of india"
+print(x)
+print(type(x))
+     
+state bank of india
+<class 'str'>
+
+#program to fetch alphabet from a specified index
+x="state bank of india"
+print(x)
+print(x[6])
+     
+state bank of india
+b
+
+x="a"
+print(x)
+print(type(x))
+     
+a
+<class 'str'>
+
+#string concatination
+x="state bank of india"
+y="ongole"
+print("string1=",x)
+print("string2=",y)
+print("concatination=",x+y)
+     
+string1= state bank of india
+string2= ongole
+concatination= state bank of indiaongole
+
+#string replcation
+x="state bank of india"
+print("replication=",x*3)
+print("replication=",3*x)
+     
+replication= state bank of indiastate bank of indiastate bank of india
+replication= state bank of indiastate bank of indiastate bank of india
+
+#negative index
+x="state bank of india"
+print("value of x=",x)
+print(x[-2])
+     
+value of x= state bank of india
+i
+
+#stringslicing
+x="state bank of india"
+print(x)
+print("value of x=",x[:])
+print(x[:3])
+print("value of x=",x[0:6])
+print("value of x=",x[0:11])
+print("value of x=",x[0:11:2])
+print("value of x=",x[0:-1])
+print("value of x=",x[0:-2])
+     
+state bank of india
+value of x= state bank of india
+sta
+value of x= state 
+value of x= state bank 
+value of x= saebn 
+value of x= state bank of indi
+value of x= state bank of ind
+
+x="state bank of india"
+result =x[-5:]
+print(result)
+     
+india
+
+#reverse a string
+x="amma"
+print(x[::-1])
+     
+amma
+
+#string palindrome
+x="amma"
+if(x==x[::-1]):
+  print("palindrome")
+else:
+  print("not")
+     
+palindrome
+
+#string anagram
+x="scilent"
+y="liscent"
+if(sorted(x)==sorted(y)):
+  print("anagram")
+else:
+  print("not")
+     
+anagram
+
+#password generator
+import random
+a="abcdefghijklmnopqrstuvwxyz"
+b="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+C="1234567890"
+d="!@#$%^&*(){}>~-_+=:;'<>,/?"
+e="a+b+c+d"
+l=int(input("enter length of password..:"))
+f=random. sample(e,1)
+print(f)
+g="".join(f)
+print(g)
+     
+enter length of password..:8
+['c']
+c
+
+#string methods
+a="brilliant computer education"
+b="ongole"
+c="state bank of india"
+d="          indiatimes"
+print(len(a))
+print(a.count('i'))
+print(a.index('n'))
+print(a.upper())
+print(a.lower())
+print(a.title())
+print(a.swapcase())
+print(a.casefold())
+print(a.replace('o','x'))
+print(a.strip())
+print(a.lstrip())
+print(a.rstrip())
+print(a.zfill(30))
+print(a.startswith("bri"))
+print(a.endswith("nd"))
+
+     
+28
+3
+7
+BRILLIANT COMPUTER EDUCATION
+brilliant computer education
+Brilliant Computer Education
+BRILLIANT COMPUTER EDUCATION
+brilliant computer education
+brilliant cxmputer educatixn
+brilliant computer education
+brilliant computer education
+brilliant computer education
+00brilliant computer education
+True
+False
+
+#maketrans,trancate
+txt="abc  def  pqr  def  asdf"
+mytable=txt.maketrans("def","1*2")
+print(txt.translate(mytable))
+     
+abc  1*2  pqr  1*2  as12
+
+#printing a string using for loop
+x="state  bank  of  india"
+for i in x:
+  print(i,end="")
+     
+state  bank  of  india
+
+#finding number of charaters in astring
+c=0
+x="state bank of india"
+for i in x:
+  print(i,end="")
+if(i==""):
+  nsp=nsp+1
+  "continue";
+print()
+print("number of spaces", 'nsp')
+     
+state bank of india
+number of spaces nsp
+
+#finding number of spacess,in a string
+nsp=0
+x="state bank of india"
+for i in x:
+   print(i, end="")
+if(i==""):
+  nsp=nsp+1
+  "continue";
+print()
+print("number of spaces",nsp)
+     
+state bank of india
+number of spaces 0
+
+#calling a function
+def frlist():
+  print("pen")
+  print("pencil")
+  print("book")
+frlist()
+frlist()
+     
+pen
+pencil
+book
+pen
+pencil
+book
+
+#proram without a function
+print("pen")
+print("pencil")
+print("book")
+print("pen")
+print("pencil")
+print("book")
+     
+pen
+pencil
+book
+pen
+pencil
+book
+
+#calling a function
+def frlist():
+  print("pen")
+  print("pencle")
+  print("book")
+frlist()
+print("...................")
+frlist()
+     
+pen
+pencle
+book
+...................
+pen
+pencle
+book
+
+#calling a function
+def starline():
+  for i in range(11):
+    print("*",end="")
+starline()
+     
+*****
+
+#calling a function
+starline()
+print("\n nipuna technologies")
+starline
+     
+*****
+ nipuna technologies
+<function _main_.starline()>
+
+#function without arguments without return type
+def mysum():
+  a=5
+  b=3
+  c=a+b
+  print("sum=",c)
+mysum()
+     
+sum= 8
+
+#function with arguemnts without return type
+def mysum(x,y):
+  a=x
+  b=y
+  c=a+b
+  print("sum=",c)
+mysum(20,10)
+     
+sum= 30
+
+#funtion without arguments with return type
+def mysum():
+  a=5
+  b=3
+  c=a+b
+  return c
+print("sum=",mysum())
+     
+sum= 8
+
+#funtion with arguments with return type
+def mysum(x,y):
+  a=x
+  b=y
+  c=x+y
+  return c
+t=mysum(20,19)
+print("sum=",t)
+     
+sum= 39
+
+#sibenar ke using recursion
+def fib(n):
+  if n<=1:
+    return n
+  else:
+    return("fib(n-1)+fib(n-2)")
+  x=int(input("enter x"))
+  for i in range(x):
+    print(fib(i))
+fib(100)
+
+     
+'fib(n-1)+fib(n-2)'
+
+#*args
+def adder(*args):
+  sum=0
+  for n in args:
+    sum=sum+n
+  print("sum:",sum)
+adder(3,5)
+adder(1,2,3,4)
+adder(2,12,19,45,32)
+     
+sum: 8
+sum: 10
+sum: 110
+
+#**kwargs
+def intro(**data):
+  print("\n data type of argument:",type(data))
+  for key ,value in data .items():
+    print("{} is {}".format(key, value))
+intro(firstname="sita",lastname="sharma",age=22,phone=1234567890)
+intro(firstname="john",lastname="wood",email="johnwood@nomail.com",country="wakanda",age=35,phone=9876543210)
+     
+ data type of argument: <class 'dict'>
+firstname is sita
+lastname is sharma
+age is 22
+phone is 1234567890
+
+ data type of argument: <class 'dict'>
+firstname is john
+lastname is wood
+email is johnwood@nomail.com
+country is wakanda
+age is 35
+phone is 9876543210
+
+#partial function without comments
+from functools import partial
+def f(a,b,c,x):
+  return 1000*a+100*b+10*c+x
+g=partial(f,3,1,4)
+print(g(5))
+     
+3145
+
+#creating empty list
+x=[]
+print(x)
+print(type(x))
+     
+[]
+<class 'list'>
+
+#creating a list with list items & print
+x=[19,20,67,87,9,43]
+print(x)
+print(type(x))
+     
+[19, 20, 67, 87, 9, 43]
+<class 'list'>
+
+#creating a list with different data types
+x=[1,2,3,4,5,6]
+print(x)
+x=[11.5,9.6,34.65,44.63,44.6]
+print(x)
+x=[11j,5j,7j,33j,90j,34j]
+print(x)
+x=["pen","pencil","book","eraser","scale"]
+print(x)
+     
+[1, 2, 3, 4, 5, 6]
+[11.5, 9.6, 34.65, 44.63, 44.6]
+[11j, 5j, 7j, 33j, 90j, 34j]
+['pen', 'pencil', 'book', 'eraser', 'scale']
+
+#creatine alist with different data types
+emp_det=[101,"anil",45655.74,"b"]
+print(emp_det)
+     
+[101, 'anil', 45655.74, 'b']
+
+#adding elements
+x=[1,234,45,56,889,44,56,78,89]
+print(x)
+x.append(100)
+print(x)
+x.extend([34,56,65,78,89])
+print(x)
+x.insert(5,11)
+print(x)
+     
+[1, 234, 45, 56, 889, 44, 56, 78, 89]
+[1, 234, 45, 56, 889, 44, 56, 78, 89, 100]
+[1, 234, 45, 56, 889, 44, 56, 78, 89, 100, 34, 56, 65, 78, 89]
+[1, 234, 45, 56, 889, 11, 44, 56, 78, 89, 100, 34, 56, 65, 78, 89]
+
+#removing elements from the list
+x=["pen","pencil","book","eraser","scale","apple","mango","grapes","orange"]
+print(x)
+x.pop()
+print(x)
+x.pop(3)
+print(x)
+del x[3]
+print(x)
+x.remove("mango")
+print(x)
+x.clear()
+print(x)
+del x
+
+     
+['pen', 'pencil', 'book', 'eraser', 'scale', 'apple', 'mango', 'grapes', 'orange']
+['pen', 'pencil', 'book', 'eraser', 'scale', 'apple', 'mango', 'grapes']
+['pen', 'pencil', 'book', 'scale', 'apple', 'mango', 'grapes']
+['pen', 'pencil', 'book', 'apple', 'mango', 'grapes']
+['pen', 'pencil', 'book', 'apple', 'grapes']
+[]
+
+x=[1,234,45,56,7,889,44,56]
+print(x)
+print(x[2])
+     
+[1, 234, 45, 56, 7, 889, 44, 56]
+45
+
+#accessing list elements(slicing)
+x=[1,234,45,56,7,889,44,56,78,89,45,67,89,90,5,567,789,90]
+print(x[:])
+print(x[0:5])
+print(x[0:11:2])
+print(x[7:11])
+print(x[0:-1])
+print(x[7:-2:2])
+print(x[-5:])
+     
+[1, 234, 45, 56, 7, 889, 44, 56, 78, 89, 45, 67, 89, 90, 5, 567, 789, 90]
+[1, 234, 45, 56, 7]
+[1, 45, 7, 44, 78, 45]
+[56, 78, 89, 45]
+[1, 234, 45, 56, 7, 889, 44, 56, 78, 89, 45, 67, 89, 90, 5, 567, 789]
+[56, 89, 67, 90, 567]
+[90, 5, 567, 789, 90]
+
+#reverse a list
+x=[1,234,45,56,7,889,44,56,78,89,45,67,89,90,5,567,789,90]
+print(x)
+print(x[::-1])
+     
+[1, 234, 45, 56, 7, 889, 44, 56, 78, 89, 45, 67, 89, 90, 5, 567, 789, 90]
+[90, 789, 567, 5, 90, 89, 67, 45, 89, 78, 56, 44, 889, 7, 56, 45, 234, 1]
+
+#sorting
+x=[1,2,3,4,5,6,7,9,8]
+print(x)
+print(sorted(x))
+print(sorted(x,reverse= True))
+     
+[1, 2, 3, 4, 5, 6, 7, 9, 8]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+[9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+#sorting
+x=[1,2,3,4,5,6,7,9,8]
+print(x)
+x.sort()
+print(x)
+x.sort(reverse=True)
+     
+[1, 2, 3, 4, 5, 6, 7, 9, 8]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#list methods
+x=[15,24,34,44,54,64,74,44,74,8]
+print("sum=",sum(x))
+print("max=",max(x))
+print("min=",min(x))
+print("length=",len(x))
+print("count=",x.count(44))
+print("index=",x.index(74))
+     
+sum= 435
+max= 74
+min= 8
+length= 10
+count= 2
+index= 6
+
+#average
+x=[15,24,34,44,54,64,74,44,9,8]
+print("average=",sum(x)/len(x))
+     
+average= 37.0
+
+#membership operators
+x=[56,67,89,90,65,78,89,54]
+print("in=",100 in x)
+print("not in=",98 not in x)
+     
+in= False
+not in= True
+
+#all
+x=[1,2,3,4,5,6,7,8,9]
+y=[]
+print("all=",all(x))
+print("all=",all(y))
+     
+all= True
+all= True
+
+#any
+x=[1,2,3,4,5,6,7,8,9]
+y=[]
+print("any=",any(x))
+print("any=",any(y))
+     
+any= True
+any= False
+
+#enumeration
+x=["pen","pencil","book","eraser","scale"]
+print(x)
+print(type(x))
+y=enumerate(x)
+print(list(y))
+print(type(y))
+     
+['pen', 'pencil', 'book', 'eraser', 'scale']
+<class 'list'>
+[(0, 'pen'), (1, 'pencil'), (2, 'book'), (3, 'eraser'), (4, 'scale')]
+<class 'enumerate'>
+
+x=["pen","pencil","book","eraser","scale"]
+print(x)
+print(type(x))
+y=enumerate(x,start=100)
+print(list(y))
+print(type(y))
+     
+['pen', 'pencil', 'book', 'eraser', 'scale']
+<class 'list'>
+[(100, 'pen'), (101, 'pencil'), (102, 'book'), (103, 'eraser'), (104, 'scale')]
+<class 'enumerate'>
+
+#updating a value
+x=[1,2,3,4,5]
+print(x)
+print(x[2])
+x[2]=11
+print(x)
+print(x[2])
+     
+[1, 2, 3, 4, 5]
+3
+[1, 2, 11, 4, 5]
+11
+
+#list concatination
+a=[1,2,3,4,5]
+b=[6,7,8,9,10]
+print(a)
+print(b)
+print(a+b)
+     
+[1, 2, 3, 4, 5]
+[6, 7, 8, 9, 10]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+#replication
+a=[1,2,3,4,5]
+print(a*3)
+print(3*a)
+     
+[1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+#copy
+x=[1,2,3,4,5]
+y=x.copy
+print(x)
+print(y)
+     
+[1, 2, 3, 4, 5]
+<built-in method copy of list object at 0x7c4bba710680>
+
+#map
+def msqrt(x):
+  return x*x
+y=[1,2,3,4,5]
+z=map(msqrt,y)
+print(y,list(z))
+     
+[1, 2, 3, 4, 5] [1, 4, 9, 16, 25]
+
+#zip
+name=["sravani","sridhar","eeshwar","maadhav"]
+roll_no=[4,1,3,2]
+x=zip(name,roll_no)
+print(list(x))
+     
+[('sravani', 4), ('sridhar', 1), ('eeshwar', 3), ('maadhav', 2)]
+
+#filter
+scores=[70,80,90,50]
+x=filter(lambda s:s>70,scores)
+print(list(x))
+     
+[80, 90]
+
+#accessing elements using for loop
+x=[40,10,7,6,3,2,9]
+for i in x:
+  print(i,end="")
+     
+401076329
+
+#sum and average of elements of list
+x=[13,12,13,1,35]
+s=0
+for i in x:
+  print(i,end="")
+  s=s+i
+print()
+print("sum=",s/5)
+     
+131213135
+sum= 14.8
+
+#print even numbers from a list
+x=[1,2,3,4,5]
+for i in x:
+  if(i%2==0):
+    print(i,end="")
+     
+24
+
+#arthmentical operation lists
+a=[1,2,3,4,5]
+b=[1,2,3,4,5]
+c=[]
+for i in range(5):
+  c.append(a[i]+b[1])
+print(c)
+     
+[3, 4, 5, 6, 7]
+
+#accept elements from key bord and print them
+a=[]
+n=int(input("enter size..:"))
+for i in range(0,n):
+  x=int(input())
+  a.append(x)
+print(a)
+     
+enter size..:6
+5
+4
+3
+5
+7
+4
+[5, 4, 3, 5, 7, 4]
+
+#program without list comprehension
+x=[]
+for y in range (1,11):
+  x.append(y)
+print(x)
+     
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+#program with list comprehesion
+x=[y for y in range(1,11)]
+print(x)
+     
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+#program without list compreshenision
+even_nums=[]
+for x in range(21):
+    if x%2==0:
+      even_nums.append(x)
+    print(even_nums)
+     
+[0]
+[0]
+[0, 2]
+[0, 2]
+[0, 2, 4]
+[0, 2, 4]
+[0, 2, 4, 6]
+[0, 2, 4, 6]
+[0, 2, 4, 6, 8]
+[0, 2, 4, 6, 8]
+[0, 2, 4, 6, 8, 10]
+[0, 2, 4, 6, 8, 10]
+[0, 2, 4, 6, 8, 10, 12]
+[0, 2, 4, 6, 8, 10, 12]
+[0, 2, 4, 6, 8, 10, 12, 14]
+[0, 2, 4, 6, 8, 10, 12, 14]
+[0, 2, 4, 6, 8, 10, 12, 14, 16]
+[0, 2, 4, 6, 8, 10, 12, 14, 16]
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+#program with list comprehenision even numbers between 1 to 10
+even_nums=[x for x in range (1,11) if x%2==0]
+print(even_nums)
+     
+[2, 4, 6, 8, 10]
+
+#tuple
+x=(1,2,3,4,5)
+print(x)
+print(type(x))
+     
+(1, 2, 3, 4, 5)
+<class 'tuple'>
+
+#deleting a tuple
+x=(1,2,3,4,5)
+del x
+     
+
+#set
+x={1,3,115,3,7,99,2}
+print(type(x))
+print(x)
+     
+<class 'set'>
+{1, 2, 99, 3, 115, 7}
+
+class bird:      #class
+  def fly(self):  #function
+    print("they fly to fultill natural activities")
+varshi=bird()     #object parrot instantiated from the class brid
+varshi.fly()
+     
+they fly to fultill natural activities
+
+class icecrem:      #class
+  def melt(self):    #function
+    print("it melts at room temperature")
+vanilla=icecrem()    #object vanilla
+vanilla.melt()
+     
+it melts at room temperature
+
+class bird:          #class
+  def fly(self):      #function
+    print("they fly to fultill natural activitiees")
+parrot=bird()         #object parrot instantiated from the  class brid
+parrot.fly()
+print("........")
+pigeon=bird()         #object pigeon instantiaed from the class bird
+pigeon.fly()
+     
+they fly to fultill natural activitiees
+........
+they fly to fultill natural activitiees
+
+class bird:      #class
+  def fly(self):  #function
+    print("they fly to fultill natural actities")
+  def buildnest(self):#function
+    print("they buid nest to live")
+parrot=bird()    #object parrot instantiated from the class bird
+parrot.fly()
+parrot.buildnest()
+     
+they fly to fultill natural actities
+they buid nest to live
+
+class bird:          #class
+  def fly(self):     #function
+    print("they fly to fulfill natural activties")
+
+parrot=bird()       #object parrot instantiated from the class bird
+parrot.age=5
+parrot.wings=2
+parrot.weight=2.3
+parrot.color="green"
+print("age of parrot=",parrot.age)
+print("age of parrot=",parrot.wings)
+print("age of parrot=",parrot.weight)
+print("age of parrot=",parrot.color)
+parrot.fly()
+     
+age of parrot= 5
+age of parrot= 2
+age of parrot= 2.3
+age of parrot= green
+they fly to fulfill natural activties
+
+class icecream:       #class
+
+  def melt(self):    #function without return type
+    print("it melts at room temperature")
+
+  def billamt(self):  #function without return type
+    return self.price*self.quantity
+
+vanilla=icecream()
+vanilla.price=20
+vanilla.quantity=400
+vanilla.weight=45.5
+vanilla.color="white"
+print("price of vanilla=",vanilla.price)
+print("quantity of vanilla=",vanilla.quantity)
+print("weight of vanilla=",vanilla.weight)
+print("color of vanilla=",vanilla.color)
+print("bill amount of vanilla=",vanilla.billamt())
+vanilla.melt()
+     
+price of vanilla= 20
+quantity of vanilla= 400
+weight of vanilla= 45.5
+color of vanilla= white
+bill amount of vanilla= 8000
+it melts at room temperature
+
+class calci:    #class
+
+  def getvals(self):  #function
+    self.a=int(input("enter a..:"))
+    self.b=int(input("enter b..:"))
+
+  def putvals(self):    #function
+    print("value of a=",self.a)
+    print("value ofa=",self.b)
+
+  def mysum(self):     #object
+    return self.a+self.b
+
+mc=calci()
+mc.getvals()
+mc.putvals()
+print("sum=",mc.mysum())
+     
+enter a..:20
+enter b..:10
+value of a= 20
+value ofa= 10
+sum= 30
+
+class calci:     #class
+
+  def _init_(self):  #constructor
+    self.a=5
+    self.b=3
+
+  def putvals(self):     #function
+    print("value of a=",self.a)
+    print("value of b=",self.b)
+
+  def mysum(self):    #funtion
+    return self.a+self.b
+
+mc=calci()
+mc.putvals()
+print("sum=",mc.mysum())
+     
+value of a= 5
+value of b= 3
+sum= 8
+
+class calci:    #class
+  def _init_(self,a,b):   #parameterized constructor
+    self.a=a
+    self.b=b
+
+  def putvals(self):      #function
+    print("value of a=",self.a)
+    print("value of b=",self.b)
+
+  def mysum(self):      #function
+    return self.a+self.b
+
+mc=calci(20,10)     #object mc
+mc.putvals()
+print("sum=",mc.mysum())
+     
+value of a= 20
+value of b= 10
+sum= 30
+
+#without staticmethod
+class car:
+
+  def speed(self):
+    print("speed of car is high")
+
+bmw=car()
+bmw.speed()
+     
+speed of car is high
+
+#staticmethod
+class car:
+
+  @staticmethod
+  def speed():
+    print("speed of car is high")
+car.speed()
+     
+speed of car is high
+
+#single inheritance
+class a:
+  def funca(self):
+    print("function of class a")
+
+class b(a):
+  def funcb(self):
+    print("function of class b")
+objb=b()
+objb.funca()
+objb.funcb()
+     
+function of class a
+function of class b
+
+#multilevel inheritance
+class a:
+  def funca(self):
+    print("function of class a")
+
+class b(a):
+  def funcb(self):
+    print("function of class b")
+
+class c(b):
+  def funcc(self):
+    print("function of class c")
+objb=b()
+objb.funca()
+objb.funcb()
+print("..............")
+objc=c()
+objc.funca()
+objc.funcb()
+objc.funcc()
+     
+function of class a
+function of class b
+..............
+function of class a
+function of class b
+function of class c
+
+#hierarchial inheritance
+class a:
+  def funca(self):
+    print("function of class a")
+class b(a):
+  def funcb(self):
+    print("function of class b")
+class c(a):
+  def funcc(self):
+    print("function of class c")
+class d(a):
+  def funcd(self):
+    print("function of class d")
+objb=b()
+objb.funca()
+objb.funcb()
+print("...............")
+objc=c()
+objc.funca()
+objc.funcc()
+print("..............")
+objd=d()
+objd.funca()
+objd.funcd()
+     
+function of class a
+function of class b
+...............
+function of class a
+function of class c
+..............
+function of class a
+function of class d
+
+#multiple inheritance
+class a:
+  def funca(self):
+    print("function of class a")
+class b:
+  def funcb(self):
+    print("function of class b")
+class c(a,b):
+  def funcc(self):
+    print("function of class c")
+objc=c()
+objc.funca()
+objc.funcb()
+objc.funcc()
+     
+function of class a
+function of class b
+function of class c
+
+#hybrid inheritance
+class a:
+  def funca(self):
+    print("function of class a")
+class b(a):
+  def funcb(self):
+    print("function of class b")
+class c:
+  def funcc(self):
+    print("function of class c")
+class d(b,c):
+  def funcd(self):
+    print("function of class d")
+objd=d()
+objd.funca()
+objd.funcb()
+objd.funcc()
+objd.funcd()
+     
+function of class a
+function of class b
+function of class c
+function of class d
+
+#multipart inheretance
+class a:
+  def funca(self):
+    print("function of class a")
+class b(a):
+  def funcb(self):
+    print("function of class b")
+class d(a):
+  def funcd(self):
+    print("function of class d")
+class c(b,d,a):
+  def funcc(self):
+    print("function of class c")
+objc=c()
+objc.funca()
+objc.funcb()
+objc.funcc()
+objc.funcd()
+
+     
+function of class a
+function of class b
+function of class c
+function of class d
+
+#method overriding
+class person:
+  def walkn(self):
+    print("person walks slowly")
+class employee(person):
+  def walk(self):
+    print("employee walks speedily")
+e=employee()
+e.walk()
+     
+employee walks speedily
+
+#operator overloding
+3+3
+     
+6
+
+"3"+"3"
+     
+'33'
+
+"nipuna"+"technologies"
+     
+'nipunatechnologies'
+
+[1,2,3]+[4,5,6]
+     
+[1, 2, 3, 4, 5, 6]
+
+3*2
+     
+6
+
+"nipuna"*3
+     
+'nipunanipunanipuna'
+
+#operator over loding
+class complex:
+  def _init_(self,a,b):
+    self.a=a
+    self.b=b
+  def _add_(self,other):
+    return self.a+other.a,self.b+other.b
+ob1=complex(1,2)
+ob2=complex(2,3)
+ob3=ob1+ob2
+print(ob3)
+     
+(3, 5)
+
+#program without exception handling
+a=100;b=0
+print("begin")
+print("ready to do division")
+c=a/b #exception will raise here
+print("result=",c)
+print("division completed")
+print("end")
+     
+begin
+ready to do division
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-7-722302b3b23a> in <cell line: 4>()
+      2 print("begin")
+      3 print("ready to do division")
+----> 4 c=a/b
+      5 print("result=",c)
+      6 print("division completed")
+
+ZeroDivisionError: division by zero
+
+#program with excepion handling (try..except..else..finally)
+a=100;b=2
+try:
+  print("begin")
+  print("ready to do division")
+  c=a/b      #exception will raise here
+  print("result=",c)
+  print("division completed")
+  print("end")
+except:
+  print("you cannot divide a number with zero")
+else:
+  print("success")
+finally:
+  print("completed the code")
+     
+begin
+ready to do division
+result= 50.0
+division completed
+end
+success
+completed the code
+
+#user defined exception
+class Error (Exception):
+  pass
+class invalidageerror(Error):
+  pass
+try:
+  age=int(input("enter your age..:"))
+  if(age<18):
+    raise invalidageerror
+  else:
+    print("eligible to vote")
+except:
+  print("you are not eligible to vote")
+finally:
+  print("ask others to vote")
+     
+enter your age..:20
+eligible to vote
+ask others to vote
+
+#program to write data to a binary file
+import pickle
+x=[101,"anil",3555.76,'b']
+f=open("emp.dat","wb")
+pickle. dump(x,f)
+f.close()
+     
+
+#program to read data from a file
+import pickle
+file=open('emp.dat','rb')
+data=pickle.load(file)
+file.close()
+cnt=0
+for item in data:
+  print(item,end="")
+  cnt+=1
+     
+101anil3555.76b
+
+#program to display calender for the specified year
+import calendar
+print("the calender of year 2018 is:")
+print("calendar:calendar(2018)")
+     
+the calender of year 2018 is:
+calendar:calendar(2018)
+
+#program to display calender for the specified moth in a specified year
+import calendar
+yy=2017
+mm=11
+print("calender.month(yy,mm)")
+     
+calender.month(yy,mm)
+
+#program to print date
+from datetime import date
+d=date.today()
+print("date",d)
+     
+date 2023-10-01
+
+ #program to print current date with separator
+ from datetime import date
+ d=date.today()
+ print("year=",d.year)
+ print("month=",d.month)
+ print("date=",d.day)
+ print(d.year,'/',d.month,'/',d.day)
+     
+year= 2023
+month= 10
+date= 1
+2023 / 10 / 1
+
+#print current date and time
+from datetime import datetime
+x=datetime.now()
+print("current date and time is",x)
+     
+current date and time is 2023-10-01 10:09:50.297162
+
